@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic:wght@200&family=Tajawal:wght@300&display=swap");
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+
 .button-style {
   background-color: #BA6C42;
   border-color: #BA6C42;
+  color: #EAE8DC;
+}
+
+.button-style:hover {
+  background-color: #e59560;
+  border-color: #e59560;
+  color: #EAE8DC;
 }
 
 /*  global classes     */
@@ -13,6 +35,13 @@ button, button:focus {
 .button-style {
   background-color: #BA6C42;
   border-color: #BA6C42;
+  color: #EAE8DC;
+}
+
+.button-style:hover {
+  background-color: #e59560;
+  border-color: #e59560;
+  color: #EAE8DC;
 }
 
 /* tyography classes*/
@@ -50,17 +79,23 @@ button, button:focus {
 
 /* color Template */
 .color-nav {
-  color: #EAE8DC !important;
+  background-color: #EAE8DC !important;
 }
 
 .color-logo {
   color: #e59560;
 }
 
+/*spial price section */
+#special-price .grid.grid-item {
+  margin-right: 1.2rem;
+  background-color: black;
+}
+
 /* saass template */
 body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #f7f4e9;
+  background-color: #f8f9fa;
   height: 200vh;
   position: relative;
 }
@@ -69,8 +104,6 @@ body:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   transition: 0.3s all ease;
@@ -544,4 +577,160 @@ a, a:hover {
     padding-bottom: 30px !important;
   }
 }
-/* saass template */ /*# sourceMappingURL=style.css.map */
+/* saass template */ 
+/* footer style */
+.footer-10 {
+  background: #f7f4e9;
+  padding: 0 0 4em 0;
+}
+
+.footer-10 .border-top, .footer-10 .border-bottom {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer-10 .footer-heading {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+}
+
+.footer-10 p {
+  color: rgba(10, 10, 10, 0.3);
+}
+
+.footer-10 a {
+  color: #000;
+}
+
+.footer-10 .con.con-1 {
+  background: #f7f4e9;
+}
+
+.footer-10 .con.con-2 {
+  background: #f7f4e9;
+}
+
+.footer-10 .con.con-3 {
+  background: #f7f4e9;
+}
+
+.footer-10 .list-unstyled li a {
+  color: #000;
+}
+
+.footer-10 .list-unstyled li a:hover {
+  color: #000;
+}
+
+.footer-10 .con-info .icon {
+  width: 50px;
+  height: 50px;
+  background: #db6930;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.footer-10 .con-info .icon span {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-10 .con-info span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-10 .subscribe-form .form-group {
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.footer-10 .subscribe-form .form-group input {
+  background: rgb(19, 18, 18) !important;
+  border: none !important;
+  outline: none !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.footer-10 .subscribe-form .form-group input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.footer-10 .subscribe-form .form-group input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.footer-10 .subscribe-form .form-group input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.footer-10 .subscribe-form .form-group input:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.footer-10 .subscribe-form .form-group input:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.footer-10 .subscribe-form .form-group .submit {
+  color: #f7f4e9 !important;
+  display: block;
+  width: 130px;
+  height: 52px;
+  font-size: 16px;
+  background: #1089ff !important;
+  border: none;
+  border-radius: 0;
+}
+
+.footer-10 .subscribe-form .form-group .submit:hover, .footer-10 .subscribe-form .form-group .submit:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.footer-10 .subscribe-form .subheading {
+  display: inline-block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+
+.footer-10 .ftco-footer-social li a {
+  background: rgba(219, 105, 48, 0.6);
+  color: #ffffff;
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.ftco-footer-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  position: relative;
+}
+
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ftco-footer-social li a:hover {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
